@@ -1,0 +1,309 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding: 1.5%;
+  background-color: #f4f4f4;
+  font-family: "BPG Nino Mtavruli";
+  font-weight: bold;
+}
+
+.main-aside {
+  width: 21%;
+  background-color: #4f3f68;
+  padding: 30px;
+  border-radius: 15px;
+  border-radius: 15px;
+  height: 95%;
+  font-size: 18px;
+  position: fixed;
+}
+
+.search-div {
+  margin-top: 10px;
+  padding-right: 5px;
+  position: relative;
+}
+.seach-input {
+  height: 30px;
+  border-radius: 10px;
+}
+
+.search-logo {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  width: 17px;
+}
+
+.nav-links {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.nav-li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.momtsere-div {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.messenger-logo {
+  width: 45px;
+}
+
+.momtsere-p {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.aside-contact-logos {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+}
+
+.facebook-logo {
+  height: 24px;
+  margin-right: 20px;
+}
+
+.instagram-logo {
+  height: 24px;
+}
+
+.main-section {
+  margin-left: 23%;
+}
+
+.main-header {
+  align-items: center;
+}
+
+.moody-logo {
+  width: 8%;
+  margin-right: 5%;
+}
+
+.moody-diary {
+  color: #4a6693;
+}
+
+.moody-diarys-div {
+  margin-top: 2%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.moody-diarys-div-header {
+  justify-content: space-between;
+}
+
+.moody-diarys-header-p {
+  margin: 10px 0 0 10px;
+  font-size: 26px;
+}
+
+.diarys-date {
+  border-bottom-left-radius: 10px;
+  background-color: #4f3f68;
+  padding: 10px;
+  border-top-right-radius: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.pure-diary {
+  margin: 5% 0 0 10px;
+  width: 70%;
+  font-family: "DejaVu Sans";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.moody-diarys-div-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paw-img-div {
+  display: inline-block;
+  background-color: #fcef54;
+  padding: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.paw-img {
+  width: 28px;
+}
+
+.diary-emotions {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.bone,
+.share {
+  width: 22px;
+  margin-left: 20px;
+}
+
+.bones-number,
+.share-number {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.bone-emotion {
+  position: absolute;
+  right: 140px;
+  z-index: 1;
+  background-color: #a5d9e5;
+}
+
+.share-emotion {
+  background-color: #fcef54;
+  z-index: 2;
+}
+
+.emotion-buttons {
+  border: none;
+}
+
+.share-number {
+  color: black;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4f3f68;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
