@@ -245,7 +245,7 @@ span.psw {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 3; /* Sit on top */
   left: 0px;
   top: 0;
   width: 100%; /* Full width */
@@ -314,6 +314,7 @@ span.psw {
 }
 .box10{
   display: flex;
+  
 }
 .satauri-dgiuri{
   width: 100%;
@@ -326,6 +327,25 @@ span.psw {
 .BOX{
   height: 100px;
   width: 100%;
-  background-color: #E6E6E6;
   
+  
+}
+.BOX1{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.submit{
+  display: flex;
+  background-color: #E6E6E6;
+  padding: 10px;
+  justify-content: center;
+}
+.submit textarea{
+border-radius: 15px;
+    resize: none;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #E6E6E6;
 }
