@@ -349,3 +349,15 @@ border-radius: 15px;
     font-size: 12px;
     color: #E6E6E6;
 }
+/*.icon-personal{
+  width: 40px;
+
+}*/
+.submit img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.submit textarea{
+ width: 300px;
+}
