@@ -9,7 +9,7 @@ body {
   font-weight: bold;
 }
 header{
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .main-aside {
