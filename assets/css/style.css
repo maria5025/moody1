@@ -8,9 +8,12 @@ body {
   font-family: "BPG Nino Mtavruli";
   font-weight: bold;
 }
+/*ეს შევცვალე */
+
 header{
   justify-content: space-between;
 }
+/*აქამდე*/
 
 .main-aside {
   width: 21%;
@@ -102,6 +105,7 @@ header{
   margin-top: 2%;
   background-color: #fff;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .moody-diarys-div-header {
@@ -114,10 +118,10 @@ header{
 }
 
 .diarys-date {
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 20px;
   background-color: #4f3f68;
   padding: 10px;
-  border-top-right-radius: 15px;
+  border-top-right-radius: 20px;
   font-size: 20px;
   color: white;
 }
@@ -129,7 +133,13 @@ header{
   font-weight: normal;
   font-style: normal;
 }
-
+.pure-diary1{
+  width: 70%;
+  font-family: "DejaVu Sans";
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 10px;
+}
 .moody-diarys-div-footer {
   margin-top: 50px;
   display: flex;
@@ -139,9 +149,9 @@ header{
 .paw-img-div {
   display: inline-block;
   background-color: #fcef54;
-  padding: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .paw-img {
@@ -160,13 +170,13 @@ header{
 .bone,
 .share {
   width: 22px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .bones-number,
 .share-number {
-  margin-left: 20px;
-  color: #fff;
+  margin-left: 5px;
+  color: /*#fff;*/black;
 }
 
 .bone-emotion {
@@ -210,6 +220,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 30px;
 }
 
 button:hover {
@@ -322,6 +333,8 @@ span.psw {
 .satauri-dgiuri{
   width: 100%;
   height: 50px;
+  margin-top: 15px;
+  font-size: 20px;
 }
 .text-dgiuri{
   width: 100%
@@ -337,11 +350,12 @@ span.psw {
   display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .submit{
   display: flex;
   background-color: #E6E6E6;
-  padding: 10px;
+  padding: 5px;
   justify-content: center;
 }
 .submit textarea{
@@ -357,10 +371,15 @@ border-radius: 15px;
 
 }*/
 .submit img{
-  width: 40px;
-  margin-right: 10px;
+  width: 30px;
+  margin-right: 5px;
+  border-radius: 50px;
 }
 
 .submit textarea{
  width: 300px;
+
+}
+.BOX2{
+  margin: 10px;
 }
