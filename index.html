@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moody</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link href="assets/fonts/fontawesome.css" rel="stylesheet">
+    <link href="assets/fonts/brands.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    
   </head>
   <body>
     <aside class="main-aside">
-      <div class="md-form search-div active-pink active-pink-2  ">
-        <input
-          class="form-control seach-input"
-          type="text"
-          aria-label="Search"
-        />
-        <img
-          src="assets/img/svg/search-logo.svg"
-          alt="search"
-          class="search-logo"
-        />
-      </div>
+
+        <div class="input-group md-form form-sm form-2 pl-0 search-form">
+          <input class="form-control my-0 py-1 amber-border" type="text" placeholder="ძებნა..." aria-label="Search">
+          <div class="input-group-append">
+            <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+          </div>
+        </div>
+
+
+
       <div class="nav-links">
-        <ul class="nav-ul">
+        <ul class="nav-ul ff-bold">
           <li class="nav-li">კალენდარი</li>
           <li class="nav-li"><a href="./index1.html" target="_self">ფოტოალბომი</li> </a>
           <li class="nav-li">PAW ორიტები</li>
@@ -37,16 +38,14 @@
           alt="messenger"
           class="messenger-logo"
         />
-        <p class="momtsere-p">მომწერე</p>
+        <p class="momtsere-p ff-bold">მომწერე</p>
           
       </div>
-      <div class="aside-contact-logos"><a href="https://www.facebook.com/Moody-110265860325589/" target="_self"> 
-        <img src="assets/img/svg/f-logo.svg" alt="" class="facebook-logo" /></a>
-        <img
-          src="assets/img/svg/instagram-logo.svg"
-          alt="instagram"
-          class="instagram-logo"
-        />
+      <div class="aside-contact-logos">
+        <ul class="d-flex soc">
+          <li><a href="#" class="p-2 fb"><i class="fab fa-facebook-f text-white" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="p-2 instagram"><i class="fab fa-instagram text-white" aria-hidden="true"></i></a></li>
+        </ul>
       </div>
       <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -72,120 +71,153 @@ window.fbAsyncInit = function() {
   page_id="110265860325589"
   theme_color="#ffc300">
 </div>
-    </aside>
+  </aside>
     <section class="main-section">
-      <header class="main-header d-flex">
-        <img
-          src="assets/img/svg/moody-logo.svg"
-          alt="moody"
-          class="moody-logo"
-        />
-        <h1 class="moody-diary">მუდის დღიური</h1>
+      <header>
+        <div class="row">
+          <div class="col-9 d-flex align-items-center">
+              <img
+                src="assets/img/svg/moody-logo.svg"
+                alt="moody"
+                class="moody-logo"
+              />
+              <div>
+                  <h1 class="moody-diary ff-bold">მუდის დღიური</h1>
+              </div>
+          </div>
 
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <div class="col-3 d-flex justify-content-end">
+            <button onclick="document.getElementById('id01').style.display='block'" class="my-auto" style="width:auto;">ავტორიზაცია</button>
+          </div>
+      </div>
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="assets/img/img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <div id="id01" class="modal">
         
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+        <form class="modal-content animate" action="/action_page.php">
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+          <div class="p-5">
+            <div>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="imgcontainer">
+                <img src="assets/img/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
+            <div class="m-0">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <div class="my-3">
+                <button type="submit">Login</button>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+
+            <div class="my-3">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
-}
-</script>
-      </header>
-      <div class="moody-diarys-div">
-        <header class="moody-diarys-div-header d-flex">
-          <p class="moody-diarys-header-p">
-            დაბადების დღე
-          </p>
-          <p class="diarys-date">10/08/2019<br />06:27</p>
-        </header>
-        <p class="pure-diary">
-          რა ლამაზი დღეა, რა ნათელი მზეააა იმიტომ რომ დღეს  ჩემი პატრონის დაბადების დღეაა :დ სამზარეულოში დიდი ფუსფუსია , მადის აღმძვრელი სურნელი ტრიალებს, ჩემთვის არავის სცალია და სახლში ვატარებ მთელ დღეს.
-        </p><p class="pure-diary1">მოგვიანებით სამზარეულოში ჩავედი და ტორტი დავინახე, ხილით იყო მორთული ახლოს მივედი რომ უფრო კარგად დამენახა... აი მერე არვიცი როგორ მოხდა მაგრამ რომ გამოვერკვიე ტორტი დაბლა ეგდო, რა მოუქნელი ვარ ყველაფერი გავაფუჭე, ეგრევე გავიქეცი და ლოგინის ქვეშ დავიმალე... ახლა გულის კანკალით ველოდები ეს ამბავი როდის გამჟღავნდება და თან ყურებზე მაქვს ხელი აფარებული.
+    </script>
+  </header>
+
+    <div class="moody-diarys-div">
+      <div class="">
+          <header class="moody-diarys-div-header d-flex">
+            <h3 class="moody-diarys-header-p ff-bold m-0 p-4">
+              დღეს ჩემი გასეირნება ისევ დაავიწყდა
+            </h3>
+            <div>
+                <div class="diarys-date px-3">10/08/2019<br />06:27</div>
+            </div>
+          </header>
+          <div class="body px-4">
+            <p class="pure-diary m-0">
+              მეც თავი ვერ შევიკვე და ჩავიფ...
+            </p>
+            <p class="pure-diary pure-diary1 m-0">ძალიან მრცხვენია ამას რომ ვწე, ყოველთვის ვცდილობდი სოლიდურად დამეჭირა თავი, სრულიად დამაკარგინა ღრსების შეგრძნება ამ იდიოტმა.</p>
+          </div>
+      </div>
+      <div class="moody-diarys-div-footer d-flex">
+        <div class="paw-img-div">
+          <img src="assets/img/svg/paw.svg" alt="paw" class="paw-img" />
+        </div>
+        <div class="d-flex p-3">
+          <a href="#" class="d-flex diary-emotions bone-emotion emotion-buttons">
+            <img src="assets/img/svg/bone.svg" alt="" class="bone ml-0" />
+            <p class="bones-number my-0">130</p>
+          </a>
+          <a  href="#" class="d-flex diary-emotions share-emotion emotion-buttons">
+            <img
+              src="assets/img/svg/share-logo.svg"
+              alt="share"
+              class="bone m-0"
+            />
+            <p class="share-number my-0 ff-bold">გასეირნება</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="moody-diarys-div">
+        <div class="">
+            <header class="moody-diarys-div-header d-flex">
+              <h3 class="moody-diarys-header-p ff-bold m-0 p-4">
+                დღეს ჩემი გასეირნება ისევ დაავიწყდა
+              </h3>
+              <div>
+                  <div class="diarys-date px-3">10/08/2019<br />06:27</div>
+              </div>
+            </header>
+            <div class="body px-4">
+              <p class="pure-diary m-0">
+                მეც თავი ვერ შევიკვე და ჩავიფ...
+              </p>
+              <p class="pure-diary pure-diary1 m-0">ძალიან მრცხვენია ამას რომ ვწე, ყოველთვის ვცდილობდი სოლიდურად დამეჭირა თავი, სრულიად დამაკარგინა ღრსების შეგრძნება ამ იდიოტმა.</p>
+            </div>
+        </div>
         <div class="moody-diarys-div-footer d-flex">
           <div class="paw-img-div">
             <img src="assets/img/svg/paw.svg" alt="paw" class="paw-img" />
           </div>
-          <div class="emotion-wrapper-div d-flex">
-            <button class="diary-emotions bone-emotion emotion-buttons">
-              <img src="assets/img/svg/bone.svg" alt="" class="bone" />
-              <p class="bones-number">130</p>
-            </button>
-            <button class="diary-emotions share-emotion emotion-buttons">
+          <div class="d-flex p-3">
+            <a href="#" class="d-flex diary-emotions bone-emotion emotion-buttons">
+              <img src="assets/img/svg/bone.svg" alt="" class="bone ml-0" />
+              <p class="bones-number my-0">130</p>
+            </a>
+            <a  href="#" class="d-flex diary-emotions share-emotion emotion-buttons">
               <img
                 src="assets/img/svg/share-logo.svg"
                 alt="share"
-                class="bone"
+                class="bone m-0"
               />
-              <p class="share-number">გასეირნება</p>
-            </button>
+              <p class="share-number my-0 ff-bold">გასეირნება</p>
+            </a>
           </div>
         </div>
       </div>
-      <div class="moody-diarys-div">
-        <header class="moody-diarys-div-header d-flex">
-          <p class="moody-diarys-header-p">
-            დღეს ჩემი გასეირნება ისევ დაავიწყდა
-          </p>
-          <p class="diarys-date">10/08/2019<br />06:27</p>
-        </header>
-        <p class="pure-diary">
-           მეც თავი ვერ შევიკვე და ჩავიფ...
-        </p><p class="pure-diary1">ძალიან მრცხვენია ამას რომ ვწე, ყოველთვის ვცდილობდი სოლიდურად დამეჭირა თავი, სრულიად დამაკარგინა ღრსების შეგრძნება ამ იდიოტმა.
-        </p>
-        <div class="moody-diarys-div-footer d-flex">
-          <div class="paw-img-div">
-            <img src="assets/img/svg/paw.svg" alt="paw" class="paw-img" />
-          </div>
-          <div class="emotion-wrapper-div d-flex">
-            <button class="diary-emotions bone-emotion emotion-buttons">
-              <img src="assets/img/svg/bone.svg" alt="" class="bone" />
-              <p class="bones-number">131</p>
-            </button>
-            <button class="diary-emotions share-emotion emotion-buttons">
-              <img
-                src="assets/img/svg/share-logo.svg"
-                alt="share"
-                class="bone"
-              />
-              <p class="share-number">გასეირნება</p>
-            </button>
-          </div>
-        </div>
-      </div>
+
     </section>
 
 
