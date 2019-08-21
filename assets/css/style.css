@@ -179,16 +179,13 @@ body {
 }
 
 .bone-emotion {
-  position: relative;
-  right: -25px;
+  margin-right: -25px;
   padding-right: 35px;
-  z-index: 1;
   background-color: #a5d9e5;
 }
 
 .share-emotion {
   background-color: #fcef54;
-  z-index: 2;
 }
 
 .emotion-buttons {
