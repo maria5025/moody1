@@ -345,7 +345,8 @@ span.psw {
   display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 13px;
+    width: 100%;
 }
 .submit{
   display: flex;
